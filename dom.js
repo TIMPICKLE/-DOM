@@ -7,9 +7,9 @@ window.dom = {
     },
     style(node, name ,value){
         //用于修改元素的样式 传入三个参数  节点 节点名字 要搞成什么样式
-        if (arguments.length===3){
+        if (arguments.length === 3){
             node.style[name] = value
-        }else if(arguments.length===2){
+        }else if(arguments.length === 2){
             if(typeof name === 'string'){
                 return node.style[name]
             }else if(name instanceof Object){
@@ -26,5 +26,6 @@ window.dom = {
             fn.call(null,nodeList[i])
         }
 
-    }
+    },
+
 }
